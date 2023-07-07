@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9A8CE74C2A582697001B1228 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE74B2A582697001B1228 /* main.swift */; };
+		9A8CE7562A5826D2001B1228 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7552A5826D2001B1228 /* DIContainer.swift */; };
+		9A8CE7582A5826E6001B1228 /* ConsoleApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7572A5826E6001B1228 /* ConsoleApplication.swift */; };
+		9A8CE75A2A582712001B1228 /* ConsoleInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7592A582712001B1228 /* ConsoleInputHandler.swift */; };
+		9A8CE75C2A58271E001B1228 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE75B2A58271E001B1228 /* ConsoleLogger.swift */; };
+		9A8CE75E2A582734001B1228 /* InMemoryTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE75D2A582734001B1228 /* InMemoryTaskManager.swift */; };
+		9A8CE7602A582760001B1228 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE75F2A582760001B1228 /* TaskManager.swift */; };
+		9A8CE7622A58276D001B1228 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7612A58276D001B1228 /* Application.swift */; };
+		9A8CE7642A582779001B1228 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7632A582779001B1228 /* Logger.swift */; };
+		9A8CE7662A582785001B1228 /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CE7652A582785001B1228 /* InputHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,15 @@
 /* Begin PBXFileReference section */
 		9A8CE7482A582697001B1228 /* 6homework6m */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6homework6m; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8CE74B2A582697001B1228 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9A8CE7552A5826D2001B1228 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		9A8CE7572A5826E6001B1228 /* ConsoleApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleApplication.swift; sourceTree = "<group>"; };
+		9A8CE7592A582712001B1228 /* ConsoleInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleInputHandler.swift; sourceTree = "<group>"; };
+		9A8CE75B2A58271E001B1228 /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		9A8CE75D2A582734001B1228 /* InMemoryTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTaskManager.swift; sourceTree = "<group>"; };
+		9A8CE75F2A582760001B1228 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		9A8CE7612A58276D001B1228 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		9A8CE7632A582779001B1228 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		9A8CE7652A582785001B1228 /* InputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +75,42 @@
 		9A8CE74A2A582697001B1228 /* 6homework6m */ = {
 			isa = PBXGroup;
 			children = (
+				9A8CE7542A5826BB001B1228 /* Protocols */,
+				9A8CE7532A5826B5001B1228 /* Classes */,
+				9A8CE7522A5826AD001B1228 /* DI */,
 				9A8CE74B2A582697001B1228 /* main.swift */,
 			);
 			path = 6homework6m;
+			sourceTree = "<group>";
+		};
+		9A8CE7522A5826AD001B1228 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9A8CE7552A5826D2001B1228 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		9A8CE7532A5826B5001B1228 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A8CE7572A5826E6001B1228 /* ConsoleApplication.swift */,
+				9A8CE7592A582712001B1228 /* ConsoleInputHandler.swift */,
+				9A8CE75B2A58271E001B1228 /* ConsoleLogger.swift */,
+				9A8CE75D2A582734001B1228 /* InMemoryTaskManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9A8CE7542A5826BB001B1228 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A8CE75F2A582760001B1228 /* TaskManager.swift */,
+				9A8CE7612A58276D001B1228 /* Application.swift */,
+				9A8CE7632A582779001B1228 /* Logger.swift */,
+				9A8CE7652A582785001B1228 /* InputHandler.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8CE7622A58276D001B1228 /* Application.swift in Sources */,
+				9A8CE7562A5826D2001B1228 /* DIContainer.swift in Sources */,
+				9A8CE75A2A582712001B1228 /* ConsoleInputHandler.swift in Sources */,
+				9A8CE75E2A582734001B1228 /* InMemoryTaskManager.swift in Sources */,
+				9A8CE7642A582779001B1228 /* Logger.swift in Sources */,
+				9A8CE7582A5826E6001B1228 /* ConsoleApplication.swift in Sources */,
+				9A8CE75C2A58271E001B1228 /* ConsoleLogger.swift in Sources */,
+				9A8CE7602A582760001B1228 /* TaskManager.swift in Sources */,
 				9A8CE74C2A582697001B1228 /* main.swift in Sources */,
+				9A8CE7662A582785001B1228 /* InputHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
