@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+let diContainer = DIContainer()
+let logger = diContainer.resolveLogger()
+let taskManager = diContainer.resolveTaskManager()
+let inputHandler = diContainer.resolveInputHandler(logger: logger, taskManager: taskManager)
+let application = diContainer.resolveApplication(inputHandler: inputHandler)
 
+application.run()
